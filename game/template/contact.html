@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{%block content%}
+<!-- contact section start -->
+  <div class="contact_section layout_padding padding_top_0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1> <strong><i class="fa fa-align-center" aria-hidden="true"></i>contact us</strong></h1>
+          <br>
+          <br>
+          <div class='form_container'>
+            <form action=''method ='post'>
+              {%csrf_token%}
+     
+          {{c.as_ul}}
+    <div><button>
+      <strong class='text-danger'>send</strong>                                         
+    </button>
+    
+        
+            <div class="image_6"><img src="/static/images/img-6.png"></div>
+          </div>
+        </div>
+      </form>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- contact section end -->
+  {%endblock content%}

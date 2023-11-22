@@ -1,0 +1,28 @@
+
+ {% extends 'base.html' %}
+ {%block content%}
+<!-- about section start -->
+  <div class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="image_2"><img src="/media/{{d.image}}"alt=></div>
+        </div>
+        <div class="col-md-6">
+          <h1 class="about_text">{{ d.heading|safe }}</h1>
+          <p class="lorem_text">{{ d.description|safe}}d the alld aoof fjjdour fjjf e djwore alld aoof fjjdour Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ex neque sequi ipsum necessitatibus rem est iusto cum autem, dolores dolorem cumque qui harum numquam, illum vitae praesentium. Impedit, quam.fjjf e djwords which don't look even slds which don't look even slightly believable
+            {% comment %} {% for i in str %}
+            <h1>{{ i }}</h1>
+            {% endfor %} {% endcomment %}
+            {{str}}
+            <h3>{{ str|truncatewords:8|upper}}</h3>
+
+          </p>
+    <a href='/best'style ='background:blue;color:white;padding:10px;border-radius:15px;'> See more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about section end -->
+  
+  {%endblock content %}
